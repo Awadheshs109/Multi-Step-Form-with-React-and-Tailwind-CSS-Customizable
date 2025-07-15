@@ -1,12 +1,103 @@
-# React + Vite
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📋 Multi-Step Form with Stepper (React + Tailwind CSS)
 
-Currently, two official plugins are available:
+A modern multi-step form built using **React.js** and styled with **Tailwind CSS**, featuring:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Stepper progress indicator.
+* Per-step form validation.
+* Browser autofill support for contact fields.
+* Final success confirmation.
+* Console output of submitted form data.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+* Multi-step wizard form with step navigation.
+* Responsive, mobile-friendly, and smooth transitions.
+* Full autofill support (`autoComplete` attributes).
+* Data logged on submission.
+* Clean and modern UI using Tailwind CSS.
+
+---
+
+## 🛠 Tech Stack
+
+* React.js (Functional Components + Hooks)
+* Tailwind CSS (for styling)
+* Basic HTML5 validation with React state management.
+
+---
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Awadheshs109/Multi-Step-Form-with-React-and-Tailwind-CSS-Customizable.git
+
+# Navigate to project
+cd multi-step-form
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+```
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+│
+├── components/
+│   ├── Stepper.jsx          # Step indicator component
+│   ├── StepperControl.jsx   # Back/Next/Finish buttons
+│   ├── Accounts.jsx         # Step 1: Email & Password form
+│   ├── Details.jsx          # Step 2: Contact form (autofill fields)
+│   ├── Final.jsx            # Final step confirmation message
+│
+├── App.js                   # Main form flow
+├── index.js
+└── index.css                # Tailwind CSS imported here
+```
+
+---
+
+## 📊 Form Fields (Autofill Enabled)
+
+* First Name (`given-name`)
+* Last Name (`family-name`)
+* Email (`email`)
+* Password (`new-password`)
+* Mobile Number (`tel`)
+* Address (`street-address`)
+* PIN Code (`postal-code`)
+
+---
+
+## ✅ Usage
+
+1. Fill in details in each step.
+2. Use **Back** or **Next** to navigate.
+3. On **Finish**, form data is printed in the console.
+4. Final confirmation message is displayed.
+
+
+---
+
+## 💬 Customization
+
+* Replace `console.log()` in `App.js` to handle API submission or storage.
+* Update fields or steps easily by modifying `Accounts.jsx` and `Details.jsx`.
+
+---
+
+## 📄 License
+
+This project is open-source under the [MIT License](LICENSE).
+
+---
